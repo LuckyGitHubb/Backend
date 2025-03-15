@@ -1,6 +1,6 @@
 const user = require('../model/userModel');
 const employee = require('../model/employee')
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const generateToken = require('../other/tokenGenerate');
 
 const dotenv = require('dotenv')
