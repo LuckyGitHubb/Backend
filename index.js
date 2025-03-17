@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const router = require('./routes/routes');
-const dotenv = require("dotenv")
+ const dotenv = require("dotenv")
  
-const connection = require('./databaseConnection/dbConnect')
+ const connection = require('./databaseConnection/dbConnect')
 const cors = require('cors');
 const authMiddleware = require('./other/authentication')
  
@@ -27,7 +27,8 @@ app.listen(PORT , async (req,res)=>{
         await connection
         console.log("MongoDB is connected.")
     } catch (error) {
-        console.log(error)
+         console.log(error)
     }
     console.log(`Server is running on PORT : ${PORT}`)
 })
+ 
